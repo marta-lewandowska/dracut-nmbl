@@ -12,7 +12,7 @@ include $(TOPDIR)/utils.mk
 
 all:
 
-dracut-nmbl: dracut-nmbl-$(VR).src.rpm
+dracut-nmbl : dracut-nmbl-$(VR).src.rpm
 
 dracut-nmbl-$(VERSION).tar.xz :
 	@git archive --format=tar --prefix=dracut-nmbl-$(VERSION)/ HEAD -- \
