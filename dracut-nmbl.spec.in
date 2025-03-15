@@ -1,4 +1,5 @@
 %global debug_package %{nil}
+%global dist %{expand:%(shell ls -1 /lib/modules | grep -Eo '\.[cefln]+[0-9]+' | tail -n1)}
 
 Summary: nmbl proof of concept as a dracut module
 Name: dracut-nmbl
